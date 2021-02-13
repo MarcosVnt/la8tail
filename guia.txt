@@ -1,0 +1,14 @@
+
+composer update
+npm run dev
+
+git push -u origin main
+
+
+https://linuxhint.com/how-to-set-up-file-permissions-for-laravel/
+
+sudo chown -R www-data:www-data /path/to/your/laravel-directory
+sudo usermod -a -G www-data ubuntu
+sudo find /path/to/your/laravel-directory -type f -exec chmod 644 {} \;
+sudo find /path/to/your/laravel-directory -type d -exec chmod 755 {} \;
+sudo chown -R my-user:www-data /path/to/your/laravel-directory
